@@ -1,25 +1,18 @@
 import { useState } from "react"
-import Question from "./Question"
-import data from './data'
-
-
-
+import informations from './components/data'
+import Item from './components/item'
 const App = () =>{
-const [questions, setQuestions] = useState(data)
 
-
-
-
+  const [tests, setTests] = useState(informations)
     return(
       <>
       <div className="container">
-      <div className="ques">
       {
-        questions.map((questions) =>{
-          return <Question {...questions}/>
+        tests.map((info, index) =>{
+          return <Item key={index} {...info} />
         })
       }
-      </div>
+  
       </div>
       </>
     )

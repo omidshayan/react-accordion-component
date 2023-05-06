@@ -11,27 +11,25 @@ body{
     height: 100vh;
 }
 .container{
+    width: 400px;
     background-color: aliceblue;
-    padding: 40px;
+    padding: 20px;
     color: #240638;
-}
-.ques{
-    background-color: antiquewhite;
-    padding: 15px;
-    box-shadow: 0 0 10px rgba(43, 42, 42, 0.616);
-    margin: 20px;
+    height: auto;
 }
 .title{
     display: flex;
-    margin: 20px;
-}
-.btn{
-    background-color: #1f6d69;
+    justify-content: space-between;
+    background-color: aqua;
     padding: 5px;
-    border-radius: 50%;
-    border: none;
-    color: #ffffff;
+    border-radius: 3px;
+    align-items: center;
     cursor: pointer;
-    margin-left: 10px;
-    display: flex;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px;
+}
+.text{
+    background-color: antiquewhite;
+    padding: 4px;
+    margin: 3px;
 }
